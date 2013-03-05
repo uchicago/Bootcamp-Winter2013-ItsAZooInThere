@@ -18,6 +18,7 @@
 		37D48BBD16E5C22700108733 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37D48BBC16E5C22700108733 /* Default-568h@2x.png */; };
 		37D48BC016E5C22700108733 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D48BBE16E5C22700108733 /* MainStoryboard.storyboard */; };
 		37D48BC316E5C22700108733 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D48BC216E5C22700108733 /* ViewController.m */; };
+		37D48BCB16E5C3ED00108733 /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D48BCA16E5C3ED00108733 /* Animal.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		37D48BBF16E5C22700108733 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		37D48BC116E5C22700108733 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		37D48BC216E5C22700108733 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		37D48BC916E5C3ED00108733 /* Animal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Animal.h; path = ItsAZooInThere/Animal.h; sourceTree = "<group>"; };
+		37D48BCA16E5C3ED00108733 /* Animal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Animal.m; path = ItsAZooInThere/Animal.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,7 @@
 		37D48BAC16E5C22700108733 /* ItsAZooInThere */ = {
 			isa = PBXGroup;
 			children = (
+				37D48BCC16E5C42800108733 /* Data Model */,
 				37D48BB516E5C22700108733 /* AppDelegate.h */,
 				37D48BB616E5C22700108733 /* AppDelegate.m */,
 				37D48BBE16E5C22700108733 /* MainStoryboard.storyboard */,
@@ -105,6 +109,16 @@
 				37D48BBC16E5C22700108733 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		37D48BCC16E5C42800108733 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				37D48BC916E5C3ED00108733 /* Animal.h */,
+				37D48BCA16E5C3ED00108733 /* Animal.m */,
+			);
+			name = "Data Model";
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +190,7 @@
 				37D48BB316E5C22700108733 /* main.m in Sources */,
 				37D48BB716E5C22700108733 /* AppDelegate.m in Sources */,
 				37D48BC316E5C22700108733 /* ViewController.m in Sources */,
+				37D48BCB16E5C3ED00108733 /* Animal.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

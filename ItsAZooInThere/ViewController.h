@@ -11,7 +11,9 @@
 @interface ViewController : UIViewController
 
 @property (strong, nonatomic) NSMutableArray *animals;
+@property (weak, nonatomic) IBOutlet UIScrollView *zooScrollView;
 
+// Class and class instance methods
 - (void)logAnimals;
 
 @end
