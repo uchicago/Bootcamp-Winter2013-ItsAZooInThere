@@ -10,4 +10,11 @@
 
 @interface Animal : NSObject
 
+@property (strong, nonatomic) NSString *name;
+@property (strong, nonatomic) NSNumber *age;
+@property (strong, nonatomic) UIImage *image;
+@property (strong, nonatomic) NSURL *imageURL;
+
+- (void)summary;
+
 @end

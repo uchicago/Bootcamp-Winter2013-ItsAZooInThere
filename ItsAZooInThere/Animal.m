@@ -10,4 +10,19 @@
 
 @implementation Animal
 
+// The compiler generates getters and setters for declared @properties
+// e.g. setName, setAge, setImage, setImageURL
+
+/*******************************************************************************
+ * @method          summary
+ * @abstract        Print a descriptive string to the console
+ * @description
+ ******************************************************************************/
+- (void)summary {
+    
+    NSLog(@">>>> Animal Object:\nName: %@\nAge: %@\nImageURL: %@\n",
+          self.name,self.age,[self.imageURL absoluteString]);
+    
+}
+
 @end
