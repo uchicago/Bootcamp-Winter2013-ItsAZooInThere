@@ -9,12 +9,19 @@
 #import "ViewController.h"
 #import "Animal.h"
 
+////////////////////////////////////////////////////////////////////////////////
 @interface ViewController ()
 
 @end
 
+////////////////////////////////////////////////////////////////////////////////
 @implementation ViewController
 
+/*******************************************************************************
+ * @method          viewDidLoad
+ * @abstract        Called when the view controller loads
+ * @description
+ ******************************************************************************/
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -47,6 +54,11 @@
     [self logAnimals];
 }
 
+/*******************************************************************************
+ * @method          didReceiveMemoryWarning
+ * @abstract        Called when the application receives a memory warning
+ * @description
+ ******************************************************************************/
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -54,7 +66,6 @@
 }
 
 #pragma mark - Debugging
-
 /*******************************************************************************
  * @method          logAnimals
  * @abstract        Log all animals to the console
