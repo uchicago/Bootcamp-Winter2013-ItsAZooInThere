@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Animal.h"
+#import "AnimalViewController.h"
 
 ////////////////////////////////////////////////////////////////////////////////
 @interface ViewController ()
@@ -63,6 +64,66 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+/*******************************************************************************
+ * @method          viewWillAppear
+ * @abstract        Called just before the view appears
+ * @description      
+ ******************************************************************************/
+- (void)viewDidAppear:(BOOL)animated
+{
+    NSLog(@">>>>>> viewDidAppear");
+    [super viewDidAppear:animated];
+    
+    // Set the content size of the scroll view
+    int numberOfAnimals = [self.animals count];
+    self.zooScrollView.contentSize = CGSizeMake(numberOfAnimals * self.zooScrollView.frame.size.width,
+                                                self.zooScrollView.frame.size.height);
+
+    // Call method to add Animal data and buttons to each "page"
+    [self loadScrollViewData];
+}
+
+#pragma mark - 
+
+/*******************************************************************************
+ * @method          loadScrollViewData
+ * @abstract        Iterate through animals array and add a button to the scrollview for each animal
+ * @description     Adjust the x coordinate by the index
+ ******************************************************************************/
+- (void) loadScrollViewData
+{
+    // Declare local variables
+
+    
+    // Loop through the animals NSMutableArray
+    for (int i=0; i < [self.animals count]; i++) {
+
+        // Retrieve animal from the array using the loop index
+        Animal *currentAnimal = [self.animals objectAtIndex:i];
+      
+        // Create a new button and position it based on the index
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        button.frame = CGRectMake(320 * i, 0, 100, 70);
+        button.tag = i;
+        
+        // Set button title to be animal name
+        [button setTitle:currentAnimal.name forState:UIControlStateNormal];
+        [button addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
+
+        // Add the button to the scroll view
+        [self.zooScrollView addSubview:button];
+    }
+}
+
+/*******************************************************************************
+ * @method          buttonTapped:
+ * @abstract
+ * @description
+ ******************************************************************************/
+- (void)buttonTapped:(UIButton*)sender
+{
 }
 
 #pragma mark - Debugging
