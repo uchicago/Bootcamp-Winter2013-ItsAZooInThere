@@ -11,8 +11,9 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+{ 
     // Override point for customization after application launch.
+    [self customizeAppearance];
     return YES;
 }
 							
@@ -41,6 +42,19 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark - Appearance Proxy
+/*******************************************************************************
+ * @method          customizeAppearance
+ * @abstract        Call the appearance proxy methods on interface objects
+ * @description
+ *******************************************************************************/
+- (void)customizeAppearance
+{
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"bar"]
+                                       forBarMetrics:UIBarMetricsDefault];
+    [[UIBarButtonItem appearance] setTintColor:[UIColor blueColor]];
 }
 
 @end

@@ -40,12 +40,15 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WhC-Ud-1QX">
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </scrollView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="footer.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZtL-0k-98s"/>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ZtL-0k-98s" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="6Go-F3-dRw"/>
                             <constraint firstItem="WhC-Ud-1QX" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="9uD-fp-jel"/>
                             <constraint firstAttribute="bottom" secondItem="WhC-Ud-1QX" secondAttribute="bottom" constant="83" id="Fgp-yH-VOe"/>
                             <constraint firstItem="pKW-w4-csc" firstAttribute="top" secondItem="3" secondAttribute="top" constant="-17" id="Oga-WQ-Gg6"/>
+                            <constraint firstItem="ZtL-0k-98s" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="SCf-b9-f4i"/>
                             <constraint firstItem="WhC-Ud-1QX" firstAttribute="top" secondItem="3" secondAttribute="top" constant="127" id="YTc-5O-t3k"/>
                             <constraint firstItem="pKW-w4-csc" firstAttribute="centerX" secondItem="WhC-Ud-1QX" secondAttribute="centerX" type="default" id="mqv-g5-vXZ"/>
                             <constraint firstItem="WhC-Ud-1QX" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="swy-WU-rYN"/>
@@ -93,15 +96,18 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="footer.png" translatesAutoresizingMaskIntoConstraints="NO" id="Fbv-1g-0Tg"/>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="QWM-Kb-bme" firstAttribute="trailing" secondItem="Sdv-RT-W8F" secondAttribute="trailing" type="default" id="9qT-YY-6Ks"/>
-                            <constraint firstItem="QWM-Kb-bme" firstAttribute="bottom" secondItem="Sdv-RT-W8F" secondAttribute="bottom" type="default" id="GX9-YG-PcJ"/>
-                            <constraint firstItem="zdt-Xh-nZE" firstAttribute="top" secondItem="Sdv-RT-W8F" secondAttribute="top" constant="58" id="LOm-uM-cpW"/>
+                            <constraint firstItem="Qvk-Ml-bjD" firstAttribute="top" secondItem="zdt-Xh-nZE" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="IC4-FY-xb5"/>
+                            <constraint firstItem="Fbv-1g-0Tg" firstAttribute="bottom" secondItem="Sdv-RT-W8F" secondAttribute="bottom" type="default" id="Pdk-uu-x5X"/>
                             <constraint firstItem="QWM-Kb-bme" firstAttribute="leading" secondItem="Sdv-RT-W8F" secondAttribute="leading" type="default" id="UlO-pr-2Fz"/>
+                            <constraint firstItem="Fbv-1g-0Tg" firstAttribute="leading" secondItem="Sdv-RT-W8F" secondAttribute="leading" type="default" id="cVo-Vc-RO1"/>
+                            <constraint firstItem="zdt-Xh-nZE" firstAttribute="top" secondItem="Sdv-RT-W8F" secondAttribute="top" constant="15" id="l9b-au-Tak"/>
+                            <constraint firstItem="Fbv-1g-0Tg" firstAttribute="top" secondItem="QWM-Kb-bme" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="lBD-xt-fxF"/>
                             <constraint firstItem="Qvk-Ml-bjD" firstAttribute="trailing" secondItem="zdt-Xh-nZE" secondAttribute="trailing" type="default" id="pNa-jE-RJR"/>
-                            <constraint firstAttribute="bottom" secondItem="Qvk-Ml-bjD" secondAttribute="bottom" constant="106" id="pTx-Yw-aS1"/>
                             <constraint firstItem="zdt-Xh-nZE" firstAttribute="leading" secondItem="Qvk-Ml-bjD" secondAttribute="leading" type="default" id="s4X-xv-B4K"/>
                             <constraint firstItem="Qvk-Ml-bjD" firstAttribute="centerX" secondItem="QWM-Kb-bme" secondAttribute="centerX" type="default" id="wBj-qE-5LE"/>
                         </constraints>
@@ -119,6 +125,9 @@
             <point key="canvasLocation" x="-38" y="-762"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="footer.png" width="320" height="63"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
