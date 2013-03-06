@@ -97,6 +97,23 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="footer.png" translatesAutoresizingMaskIntoConstraints="NO" id="Fbv-1g-0Tg"/>
+                            <button opaque="NO" contentMode="bottom" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0mJ-LQ-Zfq">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="17Y-Cb-oSO"/>
+                                    <constraint firstAttribute="height" constant="58" id="EUa-PX-Hba"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button" image="twitter.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendTweet:" destination="oNj-Io-XRa" eventType="touchUpInside" id="DKA-z9-bih"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -104,7 +121,9 @@
                             <constraint firstItem="Qvk-Ml-bjD" firstAttribute="top" secondItem="zdt-Xh-nZE" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="IC4-FY-xb5"/>
                             <constraint firstItem="Fbv-1g-0Tg" firstAttribute="bottom" secondItem="Sdv-RT-W8F" secondAttribute="bottom" type="default" id="Pdk-uu-x5X"/>
                             <constraint firstItem="QWM-Kb-bme" firstAttribute="leading" secondItem="Sdv-RT-W8F" secondAttribute="leading" type="default" id="UlO-pr-2Fz"/>
+                            <constraint firstItem="0mJ-LQ-Zfq" firstAttribute="top" secondItem="Sdv-RT-W8F" secondAttribute="top" constant="6" id="anC-de-aFp"/>
                             <constraint firstItem="Fbv-1g-0Tg" firstAttribute="leading" secondItem="Sdv-RT-W8F" secondAttribute="leading" type="default" id="cVo-Vc-RO1"/>
+                            <constraint firstAttribute="trailing" secondItem="0mJ-LQ-Zfq" secondAttribute="trailing" constant="4" id="eIF-wh-jKg"/>
                             <constraint firstItem="zdt-Xh-nZE" firstAttribute="top" secondItem="Sdv-RT-W8F" secondAttribute="top" constant="15" id="l9b-au-Tak"/>
                             <constraint firstItem="Fbv-1g-0Tg" firstAttribute="top" secondItem="QWM-Kb-bme" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="lBD-xt-fxF"/>
                             <constraint firstItem="Qvk-Ml-bjD" firstAttribute="trailing" secondItem="zdt-Xh-nZE" secondAttribute="trailing" type="default" id="pNa-jE-RJR"/>
@@ -127,6 +146,7 @@
     </scenes>
     <resources>
         <image name="footer.png" width="320" height="63"/>
+        <image name="twitter.png" width="258" height="258"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

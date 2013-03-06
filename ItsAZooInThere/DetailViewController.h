@@ -16,4 +16,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *animalNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *animalAgeLabel;
 
+- (IBAction)sendTweet:(UIButton *)sender;
+
 @end

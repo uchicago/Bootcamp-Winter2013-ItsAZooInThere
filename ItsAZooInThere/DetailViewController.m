@@ -8,6 +8,7 @@
 
 #import "DetailViewController.h"
 #import "Animal.h"
+#import <Social/Social.h>
 
 @interface DetailViewController ()
 
@@ -51,6 +52,21 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Social
+/*******************************************************************************
+ * @method          sendTweet:
+ * @abstract
+ * @description      
+ *******************************************************************************/
+- (IBAction)sendTweet:(UIButton *)sender {
+    
+    SLComposeViewController *tweetSheet = [SLComposeViewController
+                                          composeViewControllerForServiceType:SLServiceTypeTwitter];
+    [tweetSheet setInitialText:@"How old is a..."];
+    [self presentViewController:tweetSheet animated:YES completion:nil];
+    
 }
 
 @end
