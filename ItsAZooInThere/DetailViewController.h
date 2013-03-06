@@ -14,5 +14,6 @@
 @property (strong, nonatomic) Animal *animal;
 @property (weak, nonatomic) IBOutlet UIImageView *animalImageView;
 @property (weak, nonatomic) IBOutlet UILabel *animalNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *animalAgeLabel;
 
 @end

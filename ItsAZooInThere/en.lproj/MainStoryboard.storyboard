@@ -28,13 +28,24 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="How old is a..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKW-w4-csc">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="261" id="PKa-BJ-XQy"/>
+                                    <constraint firstAttribute="height" constant="176" id="WdS-ZM-84b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="38"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WhC-Ud-1QX">
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="pKW-w4-csc" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="29" id="3Hh-fZ-oRZ"/>
                             <constraint firstItem="WhC-Ud-1QX" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="9uD-fp-jel"/>
+                            <constraint firstItem="pKW-w4-csc" firstAttribute="top" secondItem="3" secondAttribute="top" constant="80" id="XQd-Bg-nu3"/>
                             <constraint firstItem="WhC-Ud-1QX" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="hpH-QU-ptH"/>
                             <constraint firstItem="WhC-Ud-1QX" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="swy-WU-rYN"/>
                             <constraint firstAttribute="bottom" secondItem="WhC-Ud-1QX" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="wiD-aR-lfF"/>
@@ -74,19 +85,31 @@
                                     <constraint firstAttribute="width" constant="254" id="zIF-eR-bUL"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Is XX years old." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qvk-Ml-bjD">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="KUS-Et-Tsl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="zdt-Xh-nZE" firstAttribute="centerX" secondItem="Sdv-RT-W8F" secondAttribute="centerX" type="default" id="4XX-Se-PIi"/>
+                            <constraint firstItem="QWM-Kb-bme" firstAttribute="trailing" secondItem="Sdv-RT-W8F" secondAttribute="trailing" type="default" id="9qT-YY-6Ks"/>
+                            <constraint firstItem="QWM-Kb-bme" firstAttribute="bottom" secondItem="Sdv-RT-W8F" secondAttribute="bottom" type="default" id="GX9-YG-PcJ"/>
                             <constraint firstItem="zdt-Xh-nZE" firstAttribute="top" secondItem="Sdv-RT-W8F" secondAttribute="top" constant="58" id="LOm-uM-cpW"/>
-                            <constraint firstItem="zdt-Xh-nZE" firstAttribute="centerX" secondItem="QWM-Kb-bme" secondAttribute="centerX" type="default" id="N8i-KX-0Fm"/>
                             <constraint firstItem="QWM-Kb-bme" firstAttribute="leading" secondItem="Sdv-RT-W8F" secondAttribute="leading" type="default" id="UlO-pr-2Fz"/>
-                            <constraint firstItem="QWM-Kb-bme" firstAttribute="bottom" secondItem="Sdv-RT-W8F" secondAttribute="bottom" type="default" id="YL1-1v-kQI"/>
+                            <constraint firstItem="Qvk-Ml-bjD" firstAttribute="trailing" secondItem="zdt-Xh-nZE" secondAttribute="trailing" type="default" id="pNa-jE-RJR"/>
+                            <constraint firstAttribute="bottom" secondItem="Qvk-Ml-bjD" secondAttribute="bottom" constant="106" id="pTx-Yw-aS1"/>
+                            <constraint firstItem="zdt-Xh-nZE" firstAttribute="leading" secondItem="Qvk-Ml-bjD" secondAttribute="leading" type="default" id="s4X-xv-B4K"/>
+                            <constraint firstItem="Qvk-Ml-bjD" firstAttribute="centerX" secondItem="QWM-Kb-bme" secondAttribute="centerX" type="default" id="wBj-qE-5LE"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="h9o-7P-Ous"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="animalAgeLabel" destination="Qvk-Ml-bjD" id="cUz-qC-Euv"/>
                         <outlet property="animalImageView" destination="zdt-Xh-nZE" id="9Hd-2N-fHp"/>
                         <outlet property="animalNameLabel" destination="QWM-Kb-bme" id="Ge2-ZH-cum"/>
                     </connections>
@@ -100,6 +123,7 @@
         <class className="DetailViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
             <relationships>
+                <relationship kind="outlet" name="animalAgeLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="animalImageView" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="animalNameLabel" candidateClass="UILabel"/>
             </relationships>

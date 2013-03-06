@@ -42,6 +42,8 @@
     // Update the interface
     self.animalImageView.image = self.animal.image;
     self.animalNameLabel.text = self.animal.name;
+    self.animalAgeLabel.text = [NSString stringWithFormat:@"Is %@ years old!",
+                                self.animal.age];
 }
 
 
