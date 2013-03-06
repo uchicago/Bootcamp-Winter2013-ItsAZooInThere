@@ -18,6 +18,8 @@
 		37C5D40416E7F2950026BE44 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C5D40316E7F2950026BE44 /* Social.framework */; };
 		37C5D40716E7F3160026BE44 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 37C5D40516E7F3160026BE44 /* twitter.png */; };
 		37C5D40816E7F3160026BE44 /* twitter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37C5D40616E7F3160026BE44 /* twitter@2x.png */; };
+		37C5D40C16E7FEF80026BE44 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 37C5D40B16E7FEF80026BE44 /* icon.png */; };
+		37C5D40E16E7FEFB0026BE44 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37C5D40D16E7FEFB0026BE44 /* icon@2x.png */; };
 		37D48BA716E5C22700108733 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D48BA616E5C22700108733 /* UIKit.framework */; };
 		37D48BA916E5C22700108733 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D48BA816E5C22700108733 /* Foundation.framework */; };
 		37D48BAB16E5C22700108733 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D48BAA16E5C22700108733 /* CoreGraphics.framework */; };
@@ -45,6 +47,8 @@
 		37C5D40316E7F2950026BE44 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		37C5D40516E7F3160026BE44 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
 		37C5D40616E7F3160026BE44 /* twitter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter@2x.png"; sourceTree = "<group>"; };
+		37C5D40B16E7FEF80026BE44 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		37C5D40D16E7FEFB0026BE44 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		37D48BA316E5C22700108733 /* ItsAZooInThere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItsAZooInThere.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37D48BA616E5C22700108733 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		37D48BA816E5C22700108733 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -99,6 +103,8 @@
 		37D48B9A16E5C22700108733 = {
 			isa = PBXGroup;
 			children = (
+				37C5D40D16E7FEFB0026BE44 /* icon@2x.png */,
+				37C5D40B16E7FEF80026BE44 /* icon.png */,
 				37C5D40316E7F2950026BE44 /* Social.framework */,
 				37D48BAC16E5C22700108733 /* ItsAZooInThere */,
 				37D48BA516E5C22700108733 /* Frameworks */,
@@ -230,6 +236,8 @@
 				37C5D3FE16E7EFB70026BE44 /* footer@2x.png in Resources */,
 				37C5D40716E7F3160026BE44 /* twitter.png in Resources */,
 				37C5D40816E7F3160026BE44 /* twitter@2x.png in Resources */,
+				37C5D40C16E7FEF80026BE44 /* icon.png in Resources */,
+				37C5D40E16E7FEFB0026BE44 /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
