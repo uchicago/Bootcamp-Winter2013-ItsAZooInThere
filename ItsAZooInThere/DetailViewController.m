@@ -24,7 +24,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    NSLog(@">>>>>> viewDidLoad");
+    NSLog(@">>>>>> DetailViewController - viewDidLoad");
 }
 
 /*******************************************************************************

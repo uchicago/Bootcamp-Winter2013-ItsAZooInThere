@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "Animal.h"
-#import "AnimalViewController.h"
+#import "DetailViewController.h"
 
 ////////////////////////////////////////////////////////////////////////////////
 @interface ViewController ()
@@ -124,7 +124,35 @@
  ******************************************************************************/
 - (void)buttonTapped:(UIButton*)sender
 {
+    NSLog(@"The button was tapped:%@",sender);
+
+    // Trigger the segue
+    [self performSegueWithIdentifier:@"segueToDetailViewController" sender:sender];
 }
+
+/*******************************************************************************
+ * @method          prepareForSegue:sender
+ * @abstract        Called before view controller segue
+ * @description
+ ******************************************************************************/
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Cast the parameter "sender" to a UIButton
+    UIButton *button = (UIButton*)sender;
+    Animal *currentAnimal = [self.animals objectAtIndex:button.tag];
+    
+    // Test for the segue we expect; useful if you have different segue possible
+    if ([segue.identifier isEqualToString:@"segueToDetailViewController"]) {
+    
+        // Get a pointer to the view controller that will be appear
+        DetailViewController *avc = (DetailViewController*)segue.destinationViewController;
+
+        // Set the animal view controller's animal property to the current animala
+        avc.animal = currentAnimal;
+    }
+}
+
+
 
 #pragma mark - Debugging
 /*******************************************************************************
