@@ -108,7 +108,7 @@
       
         // Create a new button and position it based on the index
         UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-        button.frame = CGRectMake(320 * i, 0, 100, 70);
+        button.frame = CGRectMake((320 * i)+20, 200, 280, 100);
         button.tag = i;
         
         // Set button title to be animal name
