@@ -107,12 +107,13 @@
         Animal *currentAnimal = [self.animals objectAtIndex:i];
       
         // Create a new button and position it based on the index
-        UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-        button.frame = CGRectMake((320 * i)+20, 280, 280, 80);
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        button.frame = CGRectMake((320 * i)+20, 0, 280, 200);
         button.tag = i;
         
         // Set button title to be animal name
-        [button setTitle:currentAnimal.name forState:UIControlStateNormal];
+        [button setImage:currentAnimal.image forState:UIControlStateNormal];
+        //[button setTitle:currentAnimal.name forState:UIControlStateNormal];
         [button addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
 
         // Add the button to the scroll view
