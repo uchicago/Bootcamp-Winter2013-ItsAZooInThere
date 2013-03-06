@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3726D44116E6AB1C00A7CF37 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3726D44016E6AB1C00A7CF37 /* DetailViewController.m */; };
+		3726D44516E6EF1300A7CF37 /* dog_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 3726D44216E6EF1300A7CF37 /* dog_image.png */; };
+		3726D44616E6EF1300A7CF37 /* narwhal_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 3726D44316E6EF1300A7CF37 /* narwhal_image.png */; };
+		3726D44716E6EF1300A7CF37 /* pig_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 3726D44416E6EF1300A7CF37 /* pig_image.png */; };
 		37D48BA716E5C22700108733 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D48BA616E5C22700108733 /* UIKit.framework */; };
 		37D48BA916E5C22700108733 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D48BA816E5C22700108733 /* Foundation.framework */; };
 		37D48BAB16E5C22700108733 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D48BAA16E5C22700108733 /* CoreGraphics.framework */; };
@@ -20,14 +23,14 @@
 		37D48BC016E5C22700108733 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D48BBE16E5C22700108733 /* MainStoryboard.storyboard */; };
 		37D48BC316E5C22700108733 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D48BC216E5C22700108733 /* ViewController.m */; };
 		37D48BCB16E5C3ED00108733 /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D48BCA16E5C3ED00108733 /* Animal.m */; };
-		37D48BD016E5DACF00108733 /* dog_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 37D48BCD16E5DACE00108733 /* dog_image.png */; };
-		37D48BD116E5DACF00108733 /* narwhal_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 37D48BCE16E5DACE00108733 /* narwhal_image.png */; };
-		37D48BD216E5DACF00108733 /* pig_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 37D48BCF16E5DACF00108733 /* pig_image.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3726D43F16E6AB1C00A7CF37 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		3726D44016E6AB1C00A7CF37 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		3726D44216E6EF1300A7CF37 /* dog_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog_image.png; sourceTree = "<group>"; };
+		3726D44316E6EF1300A7CF37 /* narwhal_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = narwhal_image.png; sourceTree = "<group>"; };
+		3726D44416E6EF1300A7CF37 /* pig_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pig_image.png; sourceTree = "<group>"; };
 		37D48BA316E5C22700108733 /* ItsAZooInThere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItsAZooInThere.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37D48BA616E5C22700108733 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		37D48BA816E5C22700108733 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -46,9 +49,6 @@
 		37D48BC216E5C22700108733 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		37D48BC916E5C3ED00108733 /* Animal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Animal.h; path = ItsAZooInThere/Animal.h; sourceTree = "<group>"; };
 		37D48BCA16E5C3ED00108733 /* Animal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Animal.m; path = ItsAZooInThere/Animal.m; sourceTree = "<group>"; };
-		37D48BCD16E5DACE00108733 /* dog_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog_image.png; sourceTree = "<group>"; };
-		37D48BCE16E5DACE00108733 /* narwhal_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = narwhal_image.png; sourceTree = "<group>"; };
-		37D48BCF16E5DACF00108733 /* pig_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pig_image.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,9 +111,9 @@
 		37D48BAD16E5C22700108733 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				37D48BCD16E5DACE00108733 /* dog_image.png */,
-				37D48BCE16E5DACE00108733 /* narwhal_image.png */,
-				37D48BCF16E5DACF00108733 /* pig_image.png */,
+				3726D44216E6EF1300A7CF37 /* dog_image.png */,
+				3726D44316E6EF1300A7CF37 /* narwhal_image.png */,
+				3726D44416E6EF1300A7CF37 /* pig_image.png */,
 				37D48BAE16E5C22700108733 /* ItsAZooInThere-Info.plist */,
 				37D48BAF16E5C22700108733 /* InfoPlist.strings */,
 				37D48BB216E5C22700108733 /* main.m */,
@@ -191,9 +191,9 @@
 				37D48BBB16E5C22700108733 /* Default@2x.png in Resources */,
 				37D48BBD16E5C22700108733 /* Default-568h@2x.png in Resources */,
 				37D48BC016E5C22700108733 /* MainStoryboard.storyboard in Resources */,
-				37D48BD016E5DACF00108733 /* dog_image.png in Resources */,
-				37D48BD116E5DACF00108733 /* narwhal_image.png in Resources */,
-				37D48BD216E5DACF00108733 /* pig_image.png in Resources */,
+				3726D44516E6EF1300A7CF37 /* dog_image.png in Resources */,
+				3726D44616E6EF1300A7CF37 /* narwhal_image.png in Resources */,
+				3726D44716E6EF1300A7CF37 /* pig_image.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
