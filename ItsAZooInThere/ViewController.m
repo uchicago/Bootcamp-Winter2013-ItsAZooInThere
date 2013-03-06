@@ -34,16 +34,19 @@
     Animal *pig = [[Animal alloc] init];
     pig.name = @"Pig";
     pig.age = @5;
+    pig.image = [UIImage imageNamed:@"pig_image"];
     
     // Add new animal object - Dog
     Animal *dog = [[Animal alloc] init];
     dog.name = @"Dog";
     dog.age = @7;
+    dog.image = [UIImage imageNamed:@"dog_image"];
     
     // Add new animal object - Narwhal
     Animal *narwhal = [[Animal alloc] init];
     narwhal.name = @"Narwhal";
     narwhal.age = @20;
+    narwhal.image = [UIImage imageNamed:@"narwhal_image"];
     
     // Add the animal objects to the animal array
     [self.animals addObject:pig];
