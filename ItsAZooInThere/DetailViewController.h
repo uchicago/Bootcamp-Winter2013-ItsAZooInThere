@@ -12,5 +12,7 @@
 @interface DetailViewController : UIViewController
 
 @property (strong, nonatomic) Animal *animal;
+@property (weak, nonatomic) IBOutlet UIImageView *animalImageView;
+@property (weak, nonatomic) IBOutlet UILabel *animalNameLabel;
 
 @end
